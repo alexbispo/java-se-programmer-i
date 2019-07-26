@@ -31,6 +31,12 @@ class Class {
     }
 }
 
+class c { void m1() { System.out.println("Hello from c."); } }
+
+// class class {} Compile error.
+
+// d {} Compile error
+
 public class Classes {
     public static void main(String[] args) {
         A a = new A();
@@ -42,5 +48,9 @@ public class Classes {
         Class clazz = new Class();
         // Class class = new Class(); Compile error
         clazz.m1();
+
+        c c = new c();
+        c.m1();
+
     }
 }
