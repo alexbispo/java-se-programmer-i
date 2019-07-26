@@ -72,6 +72,11 @@ class H implements E {
     public F m12() { return new F(); }
 }
 
+// public interface i {} Compile error because must have only one public interface or class by file
+// public class j {} Compile error because must have only one public interface or class by file
+
+interface i {}
+
 public class Classes {
 
     private final static class D {}
